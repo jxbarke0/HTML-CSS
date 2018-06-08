@@ -2,13 +2,13 @@
 html {
 	font-family: sans-serif;
 	font-size: 62.5%;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
 
 body {
-    font-size: 14px;
+	font-size: 14px;
 	margin: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.42857143;
@@ -16,26 +16,26 @@ body {
 	background-color: #fff;
 }
 
-footer,
+footer, 
 nav {
-  display: block;
+	display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-    line-height: 50px;
-    font-weight: 900;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #E91C1C;
+	line-height: 50px;
+	font-weight: 900;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #E91C1C;
 	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
-h1::after {  /* This is the underline */
+h1:after { /*this is the underline! */
 	display: block;
 	content: "";
 	height: 2px;
@@ -46,13 +46,13 @@ h1::after {  /* This is the underline */
 }
 
 h2 {
-    line-height: 50px;
-    color: #E91C1C;
+	line-height: 50px;
+	color: #E91C1C;
 }
 
 h3 {
-    line-height: 30px;
-    padding-bottom: 20px;
+	line-height: 30px;
+	padding-bottom: 20px;
 }
 
 h4 {
@@ -64,22 +64,22 @@ h4 {
 }
 
 p {
-    font-weight: 300;
-    line-height: 30px;
-    padding-bottom: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	padding-bottom: 15px;
 }
 
 .text-center {
-    text-align: center;
+	text-align: center;
 }
 
 .heading-padding {
-    padding-bottom: 40px;
+	padding-bottom: 40px;
 }
 
 section {
-    padding-top: 50px;
-    margin-top: 50px;
+	padding-top: 50px;
+	margin-top: 50px;
 }
 
 .navbar {
@@ -89,21 +89,22 @@ section {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
+
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+	margin-right: -15px;
+	margin-left: -15px;
 }
 
 .clearfix:after,
@@ -118,6 +119,7 @@ section {
 	height: 100%;
 	width: 100%;
 	position: fixed;
+	/*images will not render outside containers*/
 	overflow: hidden;
 	top: 0;
 	left: 0;
@@ -126,34 +128,31 @@ section {
 
 .menu-container {
 	max-height: 340px;
-	margin: 0% auto;
+	margin: 0% auto; /*helps on center alignment. first value is top and bottom, second value is left and right*/
 	content: " ";
-	top: 0;
-	left: 0; 
-	position: absolute;
 	width: 100%;
 	position: fixed;
-	z-index: 100;
-	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 100; /*3d effect*/
 }
 
-/*home section styles*/
+/* home section styles */
+
 #home {
-	background: url(../images/planets.jpg) no-repeat 50% 50%;
+	background: url(../images/planets.jpg) no-repeat 50% 50%; /*img size 50%*/
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background size: cover;
 	width: 100%;
 	display: block;
 	height: auto;
-	padding-top: 350px; /* This is spacer before the Main title Logo */
-	padding-bottom: 500px; /* This is spacer after the Main title Logo */
-	color: #fff;
-}
+	padding-top: 350px;
+	padding-bottom: 500px;
+	color: #fff
+} 
 
-.head-main {
+.head-main { /*the space station title text*/
 	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
 	font-variant: small-caps;
 	color: #fff;
@@ -163,40 +162,40 @@ section {
 	text-align: left;
 	font-family: impact, sans-serif;
 	line-height: 2;
-    font-weight: 900;
-    border: 5px double #fff;
-    padding: 10px;
+	font-weight: 900;
+	border: 5px double #fff; /*double line border*/
+	padding: 10px;
 }
 
 .head-sub-main {
-    font-size: 23px ;
-    font-weight: 500;
-    padding: 50px 20px 10px 20px;
-	text-transform: uppercase;  
+	font-size: 23px;
+	font-weight: 500;
+	padding: 50px 20px 10px 20px;
+	text-transform: uppercase;
 }
 
 .head-last {
-    font-size: 18px ;
-    font-weight: 900;
-    padding: 5px 20px 20px 20px;
-    border: 1px dotted #fff;
-    padding: 5px;
+	font-size: 18px;
+	font-weight: 900;
+	padding: 5px 20px 20px 20px;
+	border: 1px dotted #fff;
+	padding: 5px;
 }
 
-/*contact styles*/
+/* contact styles */
 .flex-container {
-    display: -webkit-flex;
-    display: flex;
+	display: -webkit-flex;
+	display: flex;
 	flex-wrap: wrap;
 	padding: 10px;
 	border-radius: 8px;
 	margin: 0px auto;
-	background-color: rgba(100,65,0,.3);
+	background-color: rgba(100,65,0,0.3);
 	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
 }
 
 #contact {
-     background-color: #f5f3f3;
+	background-color: #f5f3f3;
 }
 
 .reservation {
@@ -204,11 +203,11 @@ section {
 	padding: 10px;
 	border-radius: 8px;
 	margin: 0px auto;
-	background-color: rgba(100,65,0,.3);
-	box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
+	background-color: rgba(100,65,0,0.3);
+	box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.5);
 }
 
-.reservation h2 {
+.reservation h2 { /*adventure just around the moon part*/
 	width: 70%;
 	text-align: center;
 	margin: 0 auto;
@@ -231,7 +230,7 @@ section {
 	word-spacing: .3pt;
 }
 
-.reservation p {
+.reservation p { /*please provide me with your contact...*/
 	color: #13161B;
 	width: 50%;
 	margin: 0 auto;
@@ -239,17 +238,17 @@ section {
 
 .reservation form {
 	font-size: 15px;
-    outline: none;
-    font-weight: 600;
-    color: #8D8E8F;
-    padding: 12px 12px;
-    width: 70%;
-    border: 1px solid #808080;
-    margin: 2% auto;
-    border-radius: 7px;
-    background: rgb(227,222,222);
-    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
-    font-family: 'Raleway', sans-serif;
+	outline: none;
+	font-weight: 600;
+	color: #8D8E8F;
+	padding: 12px 12px;
+	width: 70%;
+	border: 1px solid #808080;
+	margin: 2% auto;
+	border-radius: 7px;
+	background: rgb(227, 222, 222);
+	box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+	font-family: 'Raleway', sans-serif;
 }
 
 .reservation input[type="text"] {
@@ -270,8 +269,8 @@ section {
 	font-family: 'Raleway', sans-serif;
 }
 
-.reservation input[type="text"]:hover {
-	box-shadow: 0 0 18px rgba(100,65,0,.8);
+.reservation input[type="text"]:hover { /*box shadow effect around fields in input form*/
+	box-shadow: 0 0 18px rgba(100, 65, 0, 0.8);
 }
 
 .form-spacer {
@@ -279,11 +278,7 @@ section {
 }
 
 .terms {
-	margin: 30px 1px 0 0 ;
-}
-
-.terms {
-	margin-top: 13%;
+	margin: 30px 1px 0 0;
 	padding-left: 52px;
 	font-size: 14px;
 	line-height: 5px;
@@ -291,21 +286,19 @@ section {
 	cursor: pointer;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
+	position: relative;
+	display: inline; /*same block level (line) as submit button*/
+	float: right;
+
 }
 
-.terms:hover {
+.terms:hover { /*changes color on hover and underlines it*/
 	color: orange;
 	text-decoration: underline;
 }
 
-.terms {
-	position: relative;
-	display: inline;
-	float: right;
-}
-
 .submit input[type="submit"] {
-	color: rgb(225,225,225);
+	color: rgb(225, 225, 225);
 	cursor: pointer;
 	border: none;
 	font-weight: 900;
@@ -317,6 +310,7 @@ section {
 	width: 25%;
 	font-size: 18px;
 	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	/*transition effect when hovering over submit button*/
 	border-radius: 7px;
 	background-color: #797a7b;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
@@ -325,23 +319,21 @@ section {
 .submit input[type="submit"]:hover {
 	color: #000;
 	background-color: #8D8E8F;
-	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+	box-shadow: inset 1px 3px 15px 0 rgba(0,0,0,0.5);
+	/*after hovering, it has to go back to transition in previous section */
 }
 
-/*=======================================
-  FOOTER STYLES
-  =======================================*/
+/*footer*/
+
 #footer {
-    background-color: rgba(100,65,0,.3);
-    color: #000;
+	background-color: rgba(100,65,0,0.3);
+	color: #000;
 	text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
-    padding: 20px 50px 20px 50px;
-    text-align: right;
+	padding: 20px 50px 20px 50px;
+	text-align: right;
 }
 
-/*=======================================
-  @MEDIA QUERIES
-  =======================================*/
+/* media helps with different devices */
 @media all and (max-width:640px) and (min-width:381px) {
     .head-main { 
         font-size: 28px ;
@@ -368,10 +360,6 @@ section {
     width: 1170px;
   }
 }
-
-
-
-
 
 
 
